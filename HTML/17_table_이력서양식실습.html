@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>이력서 양식 작성 실습</title>
+<style>
+    table { border-collapse: collapse; }
+    table, th, td { border: 1px solid black; }
+    tr { height: 40px; }
+    th { background-color: #ddd; font-size: 1.1em; }
+    td { text-align: center; }
+</style>
+</head>
+<body>
+    <h2>이력서 양식</h2>
+    <table>
+        <colgroup>
+            <col width="100">
+            <col width="100">
+            <col width="200">
+            <col width="100">
+            <col width="200">
+        </colgroup>
+<!--        
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+        </tr>
+-->
+        <tr>
+            <td rowspan="4">
+                <img src="imgs/photo.png" width="100" height="150">
+            </td>
+            <th colspan="4">이력서</th>
+        </tr>
+        <tr>
+            <th rowspan="2">성명</th>
+            <td rowspan="2">홍길동</td>
+            <th colspan="2">주민등록번호</th>
+        </tr>
+        <tr>
+            <td colspan="2">111111-22222</td>
+        </tr>
+        <tr>
+            <td colspan="4">생년월일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            년&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            월&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            일</td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td colspan="4">서울시 강남구 역삼동</td>
+        </tr>
+        <tr>
+            <th rowspan="2">연락처</th>
+            <th>집전화</th>
+            <td>02-111-2222</td>
+            <th rowspan="2">전자우편</th>
+            <td rowspan="2">test@test.com</td>
+        </tr>
+        <tr>
+            <th>핸드폰</th>
+            <td>010-1111-1111</td>
+        </tr>
+        
+    </table>
+</body>
+</html>
