@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>form select</title>
+</head>
+<body>
+    <h2>form select 태그</h2>
+    <form>
+        좋아하는 자동차는?(1개만 선택)<br>
+        <select name="car">
+            <option selected disabled>선택</option>
+            <optgroup label="국외">
+                <option>BMW</option>
+                <option value="Benz">벤츠</option>
+            </optgroup>
+            <optgroup label="국내">
+                <option value="Hyundai">현대자동차</option>
+                <option value="Kia">기아자동차</option>
+            </optgroup>
+        </select>
+        <hr>
+        
+        좋아하는 자동차는?(여러개 선택 가능)<br>
+        <select name="cars" multiple>
+            <optgroup label="국외">
+                <option>BMW</option>
+                <option value="Benz">벤츠</option>
+            </optgroup>
+            <optgroup label="국내">
+                <option value="Hyundai">현대자동차</option>
+                <option value="Kia">기아자동차</option>
+            </optgroup>
+        </select>
+        
+        <hr>
+        <input type="submit" value="전송">
+    </form>
+    
+    
+</body>
+</html>
+
+
+
+
+
