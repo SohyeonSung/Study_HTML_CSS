@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title> </title>
+<style>
+    h1 {background-color: pink}
+    h2 {background-color: skyblue}
+
+    /* 선택자 class 사용 .(점) */
+    .red {background-color: red}
+    .green {background-color: green}
+    .yellow {background-color: yellow}
+    
+    /* 선택자 # : id 속성명을 의미 */
+    #yellow {background-color: brown}
+    
+    /* 선택자 우선순위 : id > class > 태그명 */
+    
+    p {
+        background-color: gray;
+        border: 2px solid blue;
+    }
+    div { border: 2px dotted red; }
+    div > p { background-color: orange; }
+    
+</style>
+</head>
+<body>
+<!--
+    CSS 문법 : 선택자 { 속성명 : 속성값; [속성명 : 속성값; ...] } 
+    작성위치
+        1. 외부파일 링크 방식 
+           (head 태그에 선언 - rel, href 필수) 
+           <link rel="stylesheet" href="mystyle.css" type = "text/css">
+        2. <head> 태그 내부에 <style> 태그 안에 작성
+           <style>
+               선택자 { 속성명 : 속성값; [속성명 : 속성값; ...] } 
+           </style>
+        3. HTML 태그 안(속성형태, 인라인 방식 - 권장 X)
+            style = "속성명 : 속성값; ..."
+-->
+    <h1> CSS 바탕색 지정 : background-color </h1>
+    <h2> H2 태그 : 속성 없음 </h2>
+    <h2 class="red"> H2 태그 : 속성 class = "red" </h2>
+    <h2 class="green"> H2 태그 : 속성 class = "green" </h2>
+    <hr>
+    
+    <h3> 배경색 노랗게 </h3>
+    <div class = "yellow">
+        배경 노랑
+    </div>
+    <hr>
+    
+    <p> 일반 p태그 (id, class 속성없는) </p>
+    <p id="yellow"> id 속성을 가진 p태그(id="yellow") </p>
+    <p class="yellow"> class 속성을 가진 p태그(class="yellow")</p>
+    
+    <div>
+        <p> p태그 - div 자녀태그 </p>
+        <p class = "green"> p태그 - div 자녀태그 (class="green") </p>
+    </div>
+    
+    
+    
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>
+    
+   
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

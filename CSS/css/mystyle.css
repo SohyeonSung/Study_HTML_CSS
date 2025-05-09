@@ -1,0 +1,21 @@
+
+    h1 {background-color: pink}
+    h2 {background-color: skyblue}
+
+    /* 선택자 class 사용 .(점) */
+    .red {background-color: red}
+    .green {background-color: green}
+    .yellow {background-color: yellow}
+    
+    /* 선택자 # : id 속성명을 의미 */
+    #yellow {background-color: brown}
+    
+    /* 선택자 우선순위 : id > class > 태그명 */
+    
+    p {
+        background-color: gray;
+        border: 2px solid blue;
+    }
+    div { border: 2px dotted red; }
+    div > p { background-color: orange; }
+    

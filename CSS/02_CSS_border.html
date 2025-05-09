@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title> CSS border </title>
+<style>
+    * {
+        margin: 0; padding: 0;
+        box-sizing: border-box; /*border-box 크기 기준 border 라인*/
+    }
+    div {
+        width: 300px; height: 50px;
+        border: 5px solid;
+        margin: 10px;
+        }
+    #div1 {border-style: dotted;}
+    #div2 {border-style: double;}
+    #div3 {border-style: dotted solid;}
+    #div4 {border-style: dotted solid double;}
+    #div5 {border-style: dotted solid double dashed;}
+    #div6 {
+        height: 100px;
+        border-radius: 30px; /*모서리 4곳 적용*/
+        border-radius: 50px;
+        border-radius: 30px 50px; /*좌상우하 우상우하*/
+        border-radius: 10px 30px 50px;
+        border-radius: 10px 20px 30px 50px;
+    }
+    
+    #div7 { /*정사각형(원)*/
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+    }
+    
+    #div8 { /*직사각형(타원)*/
+        width: 200px;
+        height: 100px;
+        border-radius: 50%;
+    }    
+    
+</style>
+</head>
+<body>
+    <h1> CSS border </h1>
+    기본폰트 크기 : 1em (기본 16px)
+    <div> border: 5px solid </div>
+    <div id="div1"> border-style : dotted </div>
+    <div id="div2"> border-style : double </div>
+    <div id="div3"> border-style : dotted solid </div>
+    <div id="div4"> border-style : dotted solid double </div>
+    <div id="div5"> border-style : dotted solid double dashed </div>
+    <hr>
+    
+    <h3> 테두리 둥글게 처리 border-radius </h3>
+    <div id = "div6"> border-style : solid </div>
+    
+    <h2> 정사각형, 직사각형 </h2>
+    <div id="div7"> 정사각형(원) </div>
+    <div id="div8"> 직사각형(타원) </div>
+    
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    
+    
+    
+    
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
