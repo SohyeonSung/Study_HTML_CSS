@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>메뉴 만들기 (인라인 블록)</title>
+<style>
+    nav ul {
+        /* border: 1px solid red; */
+        list-style-type: none;
+        margin: 0; padding: 0;
+        background-color: #444;
+        overflow: hidden;
+        font-size: 0; /* inline-block 적용시 중간 간격 제거용 */
+    }
+    nav li {
+        display: inline-block;
+        border-right: 2px solid #999;
+    }
+    nav a {
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+        font-size: 1.5rem; /* 브라우저 폰트사이즈 기준 */
+        color: white;
+    }
+/*    
+    nav .active, nav .active:hover {
+        background-color: red;
+    }
+    nav a:hover {
+        background-color: #777;
+    }
+*/    
+    nav .active {
+        background-color: red;
+    }
+    nav a:hover:not(.active) {
+        background-color: #777;
+    }
+    
+    nav li:last-child {
+        float: right;
+        border-left: 2px solid #999;
+        border-right: none;
+    }
+    nav ul::after {
+        content: "";
+        clear: both;
+    }
+</style>    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    
+    <div>
+        <ul>
+            <li>사과</li>
+            <li>복숭아</li>
+            <li>바나나</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
